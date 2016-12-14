@@ -1,0 +1,67 @@
+/*---------------------------------------------------------------------------------*/
+
+
+/* Orange color #e67e22; */
+
+
+/* first setup of a responsive project */
+
+
+/* no marging and padding on any element and use the border box */
+
+
+/*---------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    /* smaller screens, the overflow will be hidden */
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*---------------------------------------------------------------------------------
+
+reusable components
+/*---------------------------------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+
+/*---------------------------------------------------------------------------------
+/* HEADER /* first setup of a responsive project
+/*---------------------------------------------------------------------------------*/
