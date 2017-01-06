@@ -1,7 +1,7 @@
-/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------
 
-
-/* Orange color #7DA7CC; */
+    1st blue color #9CD1FF
+/* 2nd Blue color #7DA7CC; */
 
 
 /* first setup of a responsive project */
@@ -54,7 +54,7 @@ reusable components
 }
 
 section {
-    padding: 70px 0;
+    padding: 10px 0;
 }
 
 .box {
@@ -92,8 +92,7 @@ h1 {
     font-size: 120%;
 }
 
-.logo-text span,
-a {
+.logo-text {
     text-decoration: none;
     margin-top: 30px;
     color: #fff;
@@ -131,5 +130,46 @@ a {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: solid 2px #7DA7CC;
+    border-bottom: solid 2px #9CD1FF;
+}
+
+.about-me-row {
+    width: 100%;
+    height: auto;
+}
+
+._60about-me-container,
+._40latest-projects-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 300px;
+    padding: 5px;
+    float: left;
+}
+
+._60about-me-container {
+    background-image: linear-gradient(rgba(52, 52, 52, 0.2), rgba(52, 52, 52, 0.2)), url(../img/LinoCatucci_cycling.jpg);
+    width: 60%;
+    height: 300px;
+    border: solid 5px #fff;
+}
+
+._40latest-projects-container {
+    background-image: url(../img/macbook-925480_960_720.jpg);
+    background-size: cover;
+    width: 40%;
+    height: 300px;
+    border: solid 5px #fff;
+}
+
+.about-me-text,
+.latest-projects-text {
+    position: absolute;
+    left: 25px;
+    bottom: 24px;
+    color: #fff;
+    line-height: 145%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
