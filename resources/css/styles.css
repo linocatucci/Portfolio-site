@@ -1,6 +1,6 @@
 /*---------------------------------------------------------------------------------
 
-    1st blue color #9CD1FF
+   1st blue color #9CD1FF
 /* 2nd Blue color #7DA7CC; */
 
 
@@ -86,17 +86,21 @@ h1 {
 
 /******** HERO TEXT *********/
 
-.logo-text {
+.logo-text:link,
+.logo-text:visited {
     margin-top: 30px;
     display: inline-block;
     font-size: 120%;
-}
-
-.logo-text {
     text-decoration: none;
     margin-top: 30px;
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s
+}
+
+.logo-text:active,
+.logo-text:hover {
+    color: #9CD1FF;
 }
 
 .hero-text-box {
@@ -115,12 +119,11 @@ h1 {
 
 .main-nav li {
     display: inline-block;
-    color: #fff;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    padding: 8px 0;
+    padding-bottom: 8px;
     color: #fff;
     text-decoration: none;
     margin-left: 30px;
@@ -142,6 +145,7 @@ h1 {
 ._40latest-projects-container {
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     position: relative;
     height: 300px;
     padding: 5px;
@@ -149,17 +153,14 @@ h1 {
 }
 
 ._60about-me-container {
-    background-image: linear-gradient(rgba(52, 52, 52, 0.2), rgba(52, 52, 52, 0.2)), url(../img/LinoCatucci_cycling.jpg);
+    background-image: linear-gradient(rgba(52, 52, 52, 0.5), rgba(52, 52, 52, 0.5)), url(../img/LinoCatucci_cycling.jpg);
     width: 60%;
-    height: 300px;
     border: solid 5px #fff;
 }
 
 ._40latest-projects-container {
     background-image: url(../img/macbook-925480_960_720.jpg);
-    background-size: cover;
     width: 40%;
-    height: 300px;
     border: solid 5px #fff;
 }
 
