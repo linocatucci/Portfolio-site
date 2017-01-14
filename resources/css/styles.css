@@ -1,139 +1,212 @@
-/*---------------------------------------------------------------------------------
+    /*---------------------------------------------------------------------------------
 
    1st blue color #9CD1FF
 /* 2nd Blue color #7DA7CC; */
-
-
-/* first setup of a responsive project */
-
-
-/* no marging and padding on any element and use the border box */
-
-
-/*---------------------------------------------------------------------------------*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    background-color: #fff;
-    color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-    /* smaller screens, the overflow will be hidden */
-    overflow-x: hidden;
-}
-
-.clearfix {
-    zoom: 1;
-}
-
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-
-
-/*---------------------------------------------------------------------------------
+    /* first setup of a responsive project */
+    /* no marging and padding on any element and use the border box */
+    /*---------------------------------------------------------------------------------*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        background-color: #fff;
+        color: #333333;
+        font-family: 'Lato', 'Arial', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-rendering: optimizeLegibility;
+        /* smaller screens, the overflow will be hidden */
+        overflow-x: hidden;
+    }
+    
+    .clearfix {
+        zoom: 1;
+    }
+    
+    .clearfix:after {
+        content: '.';
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    /*---------------------------------------------------------------------------------
 
 reusable components
 /*---------------------------------------------------------------------------------*/
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-section {
-    padding: 10px 0;
-}
-
-.box {
-    padding: 1%;
-}
-
-
-/*---------------------------------------------------------------------------------
+    
+    .row {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    
+    section {
+        padding: 5px 0;
+    }
+    
+    .box {
+        padding: 1%;
+    }
+    /* HEADINGS */
+    
+    h1,
+    h2,
+    h3 {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    
+    h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #fff;
+        word-spacing: 4px;
+        font-size: 180%;
+        letter-spacing: 1px;
+    }
+    
+    h2 {
+        /* dit is 2x de fontsize van de global fontsize in html block declaratie 200% = 40px */
+        font-size: 150%;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 110%;
+        margin-bottom: 15px;
+    }
+    
+    h2:after {
+        /* whole width and force line breaks */
+        display: block;
+        height: 2px;
+        background: #9CD1FF;
+        content: " ";
+        width: 100px;
+        /* make it centered-> margin: 0 auto */
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    /*---------------------------------------------------------------------------------
 /* HEADER /* first setup of a responsive project
 /*---------------------------------------------------------------------------------*/
-
-header {
-    background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/macbook_moleskine.jpeg);
-    height: 65vh;
-    background-size: cover;
-    background-position: center;
-}
-
-h1 {
-    color: #efefef;
-    text-align: center;
-    font-size: 300%;
-    font-weight: 300;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-}
-
-
-/******** HERO TEXT *********/
-
-.logo-text:link,
-.logo-text:visited {
-    margin-top: 30px;
-    display: inline-block;
-    font-size: 120%;
-    text-decoration: none;
-    margin-top: 30px;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s
-}
-
-.logo-text:active,
-.logo-text:hover {
-    color: #9CD1FF;
-}
-
-.hero-text-box {
-    margin-top: 100px;
-}
-
-
-/******** MAIN NAVIGATION MENU ********/
-
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-    display: inline-block;
-}
-
-.main-nav li {
-    display: inline-block;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    padding-bottom: 8px;
-    color: #fff;
-    text-decoration: none;
-    margin-left: 30px;
-    border-bottom: solid 2px transparent;
-    transition: border-bottom 0.3s, border 0.3s, color 0.3s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: solid 2px #9CD1FF;
+    
+    .header-front-page {
+        background-attachment: fixed;
+        /* background-image: url(img/macbook_moleskine.jpeg); */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/macbook_moleskine.jpeg);
+        height: 55vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    h1 {
+        color: #efefef;
+        text-align: center;
+        font-size: 250%;
+        font-weight: 300;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    /******** HERO TEXT *********/
+    
+    .logo-text:link,
+    .logo-text:visited {
+        margin-top: 30px;
+        display: inline-block;
+        font-size: 120%;
+        text-decoration: none;
+        margin-top: 30px;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s
+    }
+    
+    .logo-text:active,
+    .logo-text:hover {
+        color: #9CD1FF;
+    }
+    
+    .hero-text-box {
+        margin-top: 100px;
+    }
+    /******** MAIN NAVIGATION MENU ********/
+    
+    .main-nav {
+        float: right;
+        list-style: none;
+        margin-top: 30px;
+        display: inline-block;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding-bottom: 8px;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        border-bottom: solid 2px transparent;
+        transition: border-bottom 0.3s, border 0.3s, color 0.3s;
+    }
+    
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: solid 2px #9CD1FF;
+    }
+    /******** ABOUT ME BLOCK ********/
+    
+    .about-myself-row h2 {
+        background-color: #fff;
+        text-transform: none;
+        margin-top: 30px;
+    }
+    
+    .about-myself-row h3 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .long-copy {
+        line-height: 170%;
+        padding: 1%;
+        width: 90%;
+        margin: 0 5%;
+        /* marging left and right of 15% = 30% total + 70% width makes 100% */
+    }
+    
+    .skills-rows h3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .skill-list-col {
+        padding: 0 5%;
+    }
+    
+    .skill-list {
+        font-size: 100%;
+        line-height: 145%;
+        float: left;
+    }
+    
+    .skill-list li {
+        padding: 2px 0;
+    }
+    /*
+.about-myself {
+    background-color: #fff;
 }
 
 .about-me-row {
@@ -141,8 +214,8 @@ h1 {
     height: auto;
 }
 
-._60about-me-container,
-._40latest-projects-container {
+.about-me-container,
+.latest-projects-container {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -152,13 +225,13 @@ h1 {
     float: left;
 }
 
-._60about-me-container {
+.about-me-container {
     background-image: linear-gradient(rgba(52, 52, 52, 0.5), rgba(52, 52, 52, 0.5)), url(../img/LinoCatucci_cycling.jpg);
     width: 60%;
     border: solid 5px #fff;
 }
 
-._40latest-projects-container {
+.latest-projects-container {
     background-image: url(../img/macbook-925480_960_720.jpg);
     width: 40%;
     border: solid 5px #fff;
@@ -174,3 +247,96 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+*/
+    /******** CONTACT ME BLOCK ********/
+    
+    ._50-contact-me-container {
+        text-decoration: none;
+        border: solid 1px #000;
+    }
+    /******** FOOTER NAVIGATION MENU ********/
+    
+    footer {
+        background-color: #2e2e2e;
+        padding: 10px;
+        font-size: 80%;
+    }
+    
+    .footer-nav {
+        float: right;
+        list-style: none;
+        margin-top: 30px;
+        display: inline-block;
+    }
+    
+    .footer-nav li {
+        display: inline-block;
+    }
+    
+    .footer-nav li a:link,
+    .footer-nav li a:visited {
+        padding-bottom: 8px;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        border-bottom: solid 2px transparent;
+        transition: border-bottom 0.3s, border 0.3s, color 0.3s;
+    }
+    
+    .footer-nav li a:hover,
+    .footer-nav li a:active {
+        color: #9CD1FF;
+    }
+    
+    .social-icons {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .social-icons {
+        color: #fff;
+    }
+    
+    .social-icons img {
+        width: 30px;
+        height: auto;
+        text-align: center;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        background-color: #000;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+    }
+    
+    .social-icons img:hover {
+        opacity: 1;
+    }
+    
+    .copyright-info {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 80%;
+    }
+    /******** ABOUT-ME PAGE ********/
+    
+    .header-about-me-page {
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/lino-beach.jpg);
+        height: 77vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-position: 69% 82%;
+    }
+    
+    .about-me-home {
+        margin-top: 100px;
+        text-transform: uppercase;
+        font-size: 200%;
+    }
