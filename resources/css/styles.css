@@ -168,7 +168,7 @@ reusable components
             margin-top: 30px;
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s
+            transition: color 0.2s
         }
         
         .logo-text:active,
@@ -199,12 +199,46 @@ reusable components
             text-decoration: none;
             margin-left: 30px;
             border-bottom: solid 2px transparent;
-            transition: border-bottom 0.3s, border 0.3s, color 0.3s;
+            transition: border-bottom 0.2s, border 0.2s, color 0.2s;
         }
         
         .main-nav li a:hover,
         .main-nav li a:active {
             border-bottom: solid 2px #9CD1FF;
+        }
+        /******** STICKY NAVIGATION MENU ********/
+        
+        .sticky {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0px 2px 2px #efefef;
+        }
+        
+        .sticky .main-nav {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .sticky .main-nav li a:link,
+        .sticky .main-nav li a:visited {
+            padding-bottom: 8px 0;
+            color: #555;
+            font-size: 90%;
+        }
+        
+        .sticky .logo-text:link,
+        .sticky .logo-text:visited {
+            margin-top: 15px;
+            color: #555;
+            font-size: 100%;
+        }
+        
+        .sticky .logo-text:active,
+        .sticky .logo-text:hover {
+            color: #9CD1FF;
         }
         /******** ABOUT ME BLOCK ********/
         
