@@ -301,51 +301,107 @@ reusable components
         font-size: 150%;
         line-height: 145%;
     }
-    /*
-.about-myself {
-    background-color: #fff;
-}
-
-.about-me-row {
-    width: 100%;
-    height: auto;
-}
-
-.about-me-container,
-.latest-projects-container {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    height: 300px;
-    padding: 5px;
-    float: left;
-}
-
-.about-me-container {
-    background-image: linear-gradient(rgba(52, 52, 52, 0.5), rgba(52, 52, 52, 0.5)), url(../img/LinoCatucci_cycling.jpg);
-    width: 60%;
-    border: solid 5px #fff;
-}
-
-.latest-projects-container {
-    background-image: url(../img/macbook-925480_960_720.jpg);
-    width: 40%;
-    border: solid 5px #fff;
-}
-
-.about-me-text,
-.latest-projects-text {
-    position: absolute;
-    left: 25px;
-    bottom: 24px;
-    color: #fff;
-    line-height: 145%;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-*/
+    /******** MODAL BOX ********/
+    /* The Modal (background) */
+    /* Form for sending email */
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+    /* Modal Content */
+    
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    /* Add Animation */
+    
+    @-webkit-keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+    
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+    /* The Close Button */
+    
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .modal-header {
+        padding: 2px 16px;
+        background-color: #3bc984;
+        color: white;
+    }
+    
+    .modal-body {
+        padding: 2px 16px;
+    }
+    
+    .modal-footer {
+        padding: 2px 16px;
+        background-color: #3bc984;
+        color: white;
+    }
+    
+    .modal-footer h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
     /******** CONTACT ME BLOCK ********/
     /******** FOOTER NAVIGATION MENU ********/
     
@@ -414,21 +470,3 @@ reusable components
         color: #fff;
         font-size: 80%;
     }
-    /*
-    .header-about-me-page {
-        background-attachment: fixed;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/lino-beach.jpg);
-        height: 77vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        background-position: 69% 82%;
-    }
-    
-    .about-me-home {
-        margin-top: 100px;
-        text-transform: uppercase;
-        font-size: 200%;
-    }
-*/
