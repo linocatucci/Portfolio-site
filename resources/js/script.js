@@ -42,16 +42,10 @@ $(document).ready(function () {
     });
 
     /* animations on scroll */
-    $('.js--wp1').waypoint(function (direction) {
-        $('.js--wp1').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-
-    });
     $('.js--wp2').waypoint(function (direction) {
-        $('.js--wp2').addClass('animated fadeInUp');
+        $('.js--wp2').addClass('animated bounce');
     }, {
-        offset: '50%'
+        offset: '85%'
 
     });
     $('.js--wp3').waypoint(function (direction) {
