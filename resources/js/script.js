@@ -14,27 +14,15 @@ $(document).ready(function () {
     });
 
     /* scroll on buttons */
-    /* select the class .js--scroll-to-plan when clicked on it, the next part */
-    /* will happen -> an animation which scrolls to the top of the js--section-plans */
+    /* select the class .js--scroll-to-home when clicked on it, the next part */
+    /* will happen -> an animation which scrolls to the top of the js-front-page, that is the home-page */
     /* with an offset op 1 second */
-    $('.js--scroll-to-plan').click(function () {
+    $('.js--scroll-to-home').click(function () {
         $('html, body').animate({
-            scrollTop: $('.js--section-plans').offset().top
+            scrollTop: $('.js-front-page').offset().top
         }, 1000);
 
     });
-
-    /* scroll on buttons */
-    /* select the class .js--scroll-to-start when clicked on it, the next part */
-    /* will happen -> an animation which scrolls to the top of the js--section-features */
-    /* with an offset/animation van / op 1 second */
-    $('.js--scroll-to-start').click(function () {
-        $('html, body').animate({
-            scrollTop: $('.section-features').offset().top
-        }, 1000);
-
-    });
-
 
     /* navication scroll */
     $(function () {
