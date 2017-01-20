@@ -109,6 +109,16 @@ reusable components
             background-position: center;
         }
         
+        .header-portfolio-front-page {
+            background-attachment: fixed;
+            /* background-image: url(img/macbook_moleskine.jpeg); */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/MacBook-Coffee-Notepad-Table-Productivity.jpg);
+            height: 55vh;
+            background-size: cover;
+            background-position: center;
+            background-position: 50% 20%;
+        }
+        
         h1 {
             color: #efefef;
             text-align: center;
