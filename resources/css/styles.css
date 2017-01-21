@@ -96,6 +96,10 @@ reusable components
             margin: 0 auto;
             margin-top: 30px;
         }
+        
+        .h2-under-sticky {
+            margin-top: 60px;
+        }
         /*---------------------------------------------------------------------------------
 /* HEADER /* first setup of a responsive project
 /*---------------------------------------------------------------------------------*/
@@ -107,6 +111,16 @@ reusable components
             height: 55vh;
             background-size: cover;
             background-position: center;
+        }
+        
+        .header-portfolio-front-page {
+            background-attachment: fixed;
+            /* background-image: url(img/macbook_moleskine.jpeg); */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/MacBook-Coffee-Notepad-Table-Productivity.jpg);
+            height: 55vh;
+            background-size: cover;
+            background-position: center;
+            background-position: 50% 20%;
         }
         
         h1 {
@@ -179,7 +193,7 @@ reusable components
             color: #9CD1FF;
         }
         
-        .hero-text-box {
+        .hero-text-quote {
             margin-top: 100px;
         }
         /******** MAIN NAVIGATION MENU ********/
@@ -498,6 +512,38 @@ reusable components
             text-align: center;
             margin: 15px 0;
             font-size: 80%;
+        }
+        /******** SECTION PORTFOLIO LIST ********/
+        
+        .portfolio-list-column {
+            padding: 1%;
+        }
+        
+        .portfolio-list-column {
+            text-align: center;
+        }
+        
+        .portfolio-list-column P {
+            margin-bottom: 15px;
+        }
+        
+        .portfolio-list-column img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border: 1px solid #909090;
+        }
+        
+        .portfolio-item-title {
+            text-align: center;
+        }
+        
+        .btn-view-more {
+            text-align: center;
+        }
+        
+        .site-link {
+            text-align: center;
         }
         /******** FOOTER NAVIGATION MENU ********/
         

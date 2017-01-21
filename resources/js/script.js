@@ -13,6 +13,20 @@ $(document).ready(function () {
         offset: '60px;'
     });
 
+    /* Sticky navigation */
+    $('.js--portfolio-list').waypoint(function (direction) {
+        if (direction == "down") {
+            $('nav').addClass('sticky');
+
+        } else {
+            $('nav').removeClass('sticky');
+        }
+
+    }, {
+        offset: '60px;'
+    });
+
+
     /* scroll on buttons */
     /* select the class .js--scroll-to-home when clicked on it, the next part */
     /* will happen -> an animation which scrolls to the top of the js-front-page, that is the home-page */
@@ -42,16 +56,10 @@ $(document).ready(function () {
     });
 
     /* animations on scroll */
-    $('.js--wp1').waypoint(function (direction) {
-        $('.js--wp1').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-
-    });
     $('.js--wp2').waypoint(function (direction) {
-        $('.js--wp2').addClass('animated fadeInUp');
+        $('.js--wp2').addClass('animated pulse');
     }, {
-        offset: '50%'
+        offset: '85%'
 
     });
     $('.js--wp3').waypoint(function (direction) {
@@ -83,6 +91,15 @@ $(document).ready(function () {
         }
     });
 });
+
+// Get the element id sticky-menu
+var stickymenu = document.getElementById("sticky-menu");
+if (stickymenu) {
+    {
+        $('nav').addClass('sticky');
+
+    }
+}
 
 // Get the modal
 var modal = document.getElementById('myModal');
