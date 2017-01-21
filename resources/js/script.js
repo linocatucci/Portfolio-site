@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     /* animations on scroll */
     $('.js--wp2').waypoint(function (direction) {
-        $('.js--wp2').addClass('animated bounce');
+        $('.js--wp2').addClass('animated pulse');
     }, {
         offset: '85%'
 
