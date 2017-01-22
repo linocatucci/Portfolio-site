@@ -92,7 +92,7 @@ $(document).ready(function () {
     });
 });
 
-// Get the element id sticky-menu
+// Get the element id sticky-menu, when sticky-menu is there (true), show the sticky menu.
 var stickymenu = document.getElementById("sticky-menu");
 if (stickymenu) {
     {
