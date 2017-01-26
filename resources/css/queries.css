@@ -37,12 +37,16 @@
                 width: 100%;
                 margin: 0 0 4% 0;
             }
+            .skills-rows h3 {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
             .skill-list {
                 width: 90%;
                 margin: auto;
                 padding: 0 5%;
                 position: relative;
-                left: 5%;
+                left: 37.5%;
             }
             .skill-list-col {
                 padding: 0 5%;
