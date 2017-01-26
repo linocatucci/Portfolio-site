@@ -257,6 +257,18 @@ reusable components
         .sticky .logo-text:hover {
             color: #9CD1FF;
         }
+        /* MOBILE NAVI */
+        
+        .mobile-nav-icon {
+            float: right;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .mobile-nav-icon i {
+            font-size: 150%;
+            color: #fff;
+        }
         /******** ABOUT ME BLOCK ********/
         
         .about-myself-row h2 {
@@ -544,6 +556,7 @@ reusable components
         
         .site-link {
             text-align: center;
+            margin-bottom: 15px;
         }
         /******** FOOTER NAVIGATION MENU ********/
         
