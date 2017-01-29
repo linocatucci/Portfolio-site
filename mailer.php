@@ -9,13 +9,13 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.kupa-flyfishing.com/index.php?success=-1#form");
+        header("Location: http://www.linocatucci.com/index.php?success=-1#lets-work-together");
         exit;
     } 
 
     // Set the recipient email address. Update this to YOUR desired email address.
     //$recipient = "linocatucci@gmail.com";
-    $recipient = "info@kupa-flyfishing.com";
+    $recipient = "linocatucci@gmail.com";
 
     // Set the email subject.
     $subject = "New contact from $name";
@@ -44,6 +44,6 @@
     */
 
     // Redirect to the index.html page with success code
-   header("Location: http://www.kupa-flyfishing.com/index.php?success=1#form");
+   header("Location: http://www.linocatucci.com/index.php?success=1#lets-work-together");
 
 ?>

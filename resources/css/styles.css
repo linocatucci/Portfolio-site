@@ -525,6 +525,25 @@ reusable components
             margin: 15px 0;
             font-size: 80%;
         }
+        /******** FORM MESSAGES ********/
+        
+        .form-messages {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            color: #333;
+            border: 1px solid #333;
+        }
+        
+        .succes {
+            background-color: rgba(20, 21, 21, 0.8);
+        }
+        
+        .error {
+            background-color: rgba(227, 62, 62, 0.80)
+        }
         /******** SECTION PORTFOLIO LIST ********/
         
         .portfolio-list-column {
