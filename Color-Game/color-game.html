@@ -26,16 +26,17 @@
     <meta name="contact" content="linocatucci@gmail.com">
     <!--Tells mobile devices not to zoom out (scale=1.0) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lino Catucci</title>
+    <title id="sticky-menu">Lino Catucci</title>
     <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="/vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/styles2.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 </head>
-<header class="header-portfolio-front-page js-front-page" id="home">
+<header class="header-kupaflyfishing-front-page js-front-page" id="home">
     <nav>
         <div class="row">
             <a href="#" class="logo-text js--scroll-to-home"><span>Lino<strong>Catucci</strong></span></a>
@@ -48,50 +49,64 @@
             </ul>
         </div>
     </nav>
-    <div class="row">
-        <h1 class="hero-text-quote">First sketch, then build</h1>
-    </div>
 </header>
 
 <body>
-    <section class="portfolio-list js--portfolio-list">
-        <div class="row">
-            <h2>MY PORTFOLIO</h2>
+    <section>
+        <h1 class="h1-class">The Great
+            <br>
+            <span id="displayColor">RGB</span>
+            <br> Color Game</h1>
+        <div id="stripe">
+            <button type="" class="btn_newGame">New colors</button>
+            <span id="messageDisplay"></span>
+            <button type="" class="mode" id="easybtn">Easy</button>
+            <button type="" class="mode selected" id="hardbtn">Hard</button>
+            <!-- Trigger the modal with a button 
+        class="btn btn-info btn-lg" -->
+            <button type="button" id="info" data-toggle="modal" data-target="#myModal">Info</button>
         </div>
-        <div class="row">
-            <h3 class="portfolio-item-title">Kupa Fly Fishing</h3>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-2 portfolio-list-column">
-                <a href="#"><img src="/resources/img/kupa-flyfishing.png" alt="Kupa Fly Fishing"></a>
-            </div>
-            <div class="col span-1-of-2 portfolio-list-column">
-                <a href="#"><img src="/resources/img/Kupa-Flyfishing2.png" alt="Kupa Fly Fishing"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="btn-view-more">
-                <a class="btn btn-full js--wp2" href="/portfolio-kupaflyfishing/kupaflyfishing.html">View More</a>
-            </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
 
-        </div>
-        <div class="row">
-            <h3 class="portfolio-item-title">Color Game</h3>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-2 portfolio-list-column">
-                <a href="#"><img src="/resources/img/easy.png" alt="Color Game (Easy mode)"></a>
-            </div>
-            <div class="col span-1-of-2 portfolio-list-column">
-                <a href="#"><img src="/resources/img/hard.png" alt="Color Game (Hard mode)"></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="btn-view-more">
-                <a class="btn btn-full js--wp2" href="/color-game/color-game.html">View More</a>
-            </div>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">The Great Color Game Intructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Guess the RGB color code on the top page</p>
+                        <ol>
+                            <li>In the squares below pick the color</li>
+                            <li>Easy mode will give you 3 squares to guess</li>
+                            <li>Hard mode will give you 6 squares to guess</li>
+                        </ol>
+                        <p>Happy playing!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
 
+            </div>
         </div>
+
+        <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="row">
+                <div class="btn-view-more">
+                    <a class="btn btn-full js--wp2" href="/work/portfolio.html">Back</a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer>
@@ -99,10 +114,10 @@
             <a href="#" class="logo-text js--scroll-to-home"><span>Lino<strong>Catucci</strong></span></a>
             <!-- <a class="mobile-nav-icon js--mobile-nav-icon"><i class="ion-navicon-round"></i></a> -->
             <ul class="footer-nav">
-                <li><a href="/index.php#home">Home</a></li>
-                <li><a href="/index.php#about">About</a></li>
+                <li><a href="index.php#home">Home</a></li>
+                <li><a href="index.php#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="/index.php#lets-work-together">Contact</a></li>
+                <li><a href="index.php#lets-work-together">Contact</a></li>
             </ul>
         </div>
         <div class="row social-icons">
@@ -118,10 +133,10 @@
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/vendors/js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap.js"></script>
-    <script type="text/javascript" src="script2.js"></script>
-    <script src="/resources/js/script.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/resources/js/script2.js"></script>
+    <script type="text/javascript" src="/resources/js/script.js"></script>
 </body>
 
 </html>
