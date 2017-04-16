@@ -81,15 +81,15 @@ button:hover {
   margin-top: 50px;
 }
 
-.modal-header {
+.modal-header1 {
   padding-bottom: 5px;
 }
 
-.modal-footer {
+.modal-footer1 {
   padding: 0;
 }
 
-.modal-footer .btn-group button {
+.modal-footer1 .btn-group1 button1 {
   height: 40px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -97,6 +97,6 @@ button:hover {
   border-right: 1px solid #ddd;
 }
 
-.modal-footer .btn-group:last-child>button {
+.modal-footer1 .btn-group1:last-child>button1 {
   border-right: 0;
 }
